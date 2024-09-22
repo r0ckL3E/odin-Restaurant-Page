@@ -18,6 +18,7 @@ export default function createHomePage() {
     const description = document.createElement('p');
     description.textContent = `A far cry from its sticky days as The Beef, 
     Chef Carmy Berzatto’s renovated restaurant features gorgeous dishes — 
-    just ignore those noises from the kitchen!`
+    just ignore those noises from the kitchen!`;
+    description.classList.add('description-text');
     content.appendChild(description);
 }

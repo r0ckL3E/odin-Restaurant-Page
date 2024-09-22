@@ -2,10 +2,12 @@ export default function createAboutPage() {
     const content = document.querySelector('#content');
 
     const headLine = document.createElement('h1');
+    headLine.classList.add('headline-font');
     headLine.textContent = 'About Carmy and The Bear';
-    content.appendChild(headLine)
-
+    content.appendChild(headLine);
+    
     const description = document.createElement('p');
+    description.classList.add('description-font');
     description.textContent = `My name's Carmen. My, um... my brother's an addict. 
     My, My brother was an addict. And this morning, I, um... Sorry, uh... I forgot, um... 
     B-Before I came to Al-Anon, I was a cook. I mean, I'm-I'm still a cook, I'm just a different 
@@ -22,13 +24,11 @@ export default function createAboutPage() {
     Like, we just knew everything about each other. Except... everybody thought he was their best friend. You know, he was that, he 
     was that magnetic. And, um... I didn't know my brother was using drսg. What does that say? As we got older, I-I realized I didn't 
     know anything about him... really. He stopped letting me into the restaurant a couple years ago. He just cut me off cold. And that, 
-    um... that hurt, you know. And I think that just, that flipped a switch in me where I was like, "Okay, fսck you, watch this."`
-
+    um... that hurt, you know. And I think that just, that flipped a switch in me where I was like, "Okay, fսck you, watch this."`;
     content.appendChild(description);
 
     const lastLine = document.createElement('h1');
-    lastLine.classList.add('amtGood');
-    lastLine.textContent = 'No amount of good is worth how terrible this feels';
-
+    lastLine.classList.add('amtGood', 'interesting-font');
+    lastLine.textContent = 'We Can’t Operate At A Higher Level Without Consistency.';
     content.appendChild(lastLine);
 }
